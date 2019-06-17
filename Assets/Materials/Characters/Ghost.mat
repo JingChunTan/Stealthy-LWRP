@@ -9,7 +9,7 @@ Material:
   m_PrefabAsset: {fileID: 0}
   m_Name: Ghost
   m_Shader: {fileID: 4800000, guid: 1eb9c0266056a2e4cb9ec2719955e6c7, type: 3}
-  m_ShaderKeywords: OUTLINE_FRONT _ALPHABLEND_ON
+  m_ShaderKeywords: _NORMALMAP
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -25,6 +25,10 @@ Material:
         m_Offset: {x: 0, y: 0}
     - _Alpha:
         m_Texture: {fileID: 2800000, guid: 80727d0a9bd846443a31616f3c053824, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _BaseMap:
+        m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _BumpMap:
@@ -124,9 +128,10 @@ Material:
     - _DistortionEnabled: 0
     - _DistortionStrength: 9.03
     - _DistortionStrengthScaled: 0.903
-    - _DstBlend: 10
+    - _DstBlend: 0
     - _EmissionEnabled: 0
     - _EmissiveIntensity: 0
+    - _EnvironmentReflections: 1
     - _FlipbookMode: 0
     - _GlossMapScale: 0
     - _Glossiness: 0.125
@@ -138,6 +143,7 @@ Material:
     - _Outline: 0.0419
     - _OutlineFront: 1
     - _Parallax: 0.02
+    - _QueueOffset: 0
     - _ReceiveShadows: 1
     - _RimBias: 0.391
     - _RimPower: 5.55
@@ -149,12 +155,13 @@ Material:
     - _SpecularEnable: 0
     - _SpecularHighlights: 1
     - _SpecularPower: 0.322
-    - _SrcBlend: 5
+    - _SrcBlend: 1
     - _Surface: 0
     - _UVSec: 0
     - _WorkflowMode: 1
-    - _ZWrite: 0
+    - _ZWrite: 1
     m_Colors:
+    - _BaseColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
     - _BorderColor: {r: 1, g: 1, b: 1, a: 1}
     - _CameraFadeParams: {r: 0, g: Infinity, b: 0, a: 0}
     - _Color: {r: 1, g: 1, b: 1, a: 1}

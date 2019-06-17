@@ -17,10 +17,12 @@
 		_Detail("Detail (RGB)", 2D) = "gray" {}
 	}
 		SubShader{
-		Tags{ "RenderType" = "Transparent" "Queue"="Transparent+1" }
+		Tags{ "RenderType" = "Transparent"  "RenderPipeline" = "LightweightPipeline" "Queue"="Transparent+1" }
 
         Pass
         {
+			Name "ForwardLit"
+			Tags{"LightMode" = "LightweightForward"}
             ZWrite On
             ColorMask 0
         }
