@@ -19,7 +19,7 @@ MonoBehaviour:
       RenderQueueType: 0
       LayerMask:
         serializedVersion: 2
-        m_Bits: 512
+        m_Bits: 4096
       PassNames: []
     overrideMaterial: {fileID: 0}
     overrideMaterialPassIndex: 0
@@ -55,6 +55,8 @@ MonoBehaviour:
   - {fileID: 4254346597161300133}
   - {fileID: 8534109290657663512}
   - {fileID: -1501570214059939833}
+  - {fileID: 4396845257046723428}
+  - {fileID: 799851627240330521}
   m_BlitShader: {fileID: 4800000, guid: c17132b1f77d20942aa75f8429c0f8bc, type: 3}
   m_CopyDepthShader: {fileID: 4800000, guid: d6dae50ee9e1bfa4db75f19f99355220, type: 3}
   m_ScreenSpaceShadowShader: {fileID: 4800000, guid: 0f854b35a0cf61a429bd5dcfea30eddd,
@@ -73,6 +75,44 @@ MonoBehaviour:
     passOperation: 0
     failOperation: 0
     zFailOperation: 0
+--- !u!114 &799851627240330521
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6b3d386ba5cd94485973aee1479b272e, type: 3}
+  m_Name: FriendsAbove
+  m_EditorClassIdentifier: 
+  settings:
+    passTag: FriendsAbove
+    Event: 300
+    filterSettings:
+      RenderQueueType: 0
+      LayerMask:
+        serializedVersion: 2
+        m_Bits: 12288
+      PassNames: []
+    overrideMaterial: {fileID: 0}
+    overrideMaterialPassIndex: 0
+    overrideDepthState: 0
+    depthCompareFunction: 4
+    enableWrite: 1
+    stencilSettings:
+      overrideStencilState: 0
+      stencilReference: 0
+      stencilCompareFunction: 8
+      passOperation: 0
+      failOperation: 0
+      zFailOperation: 0
+    cameraSettings:
+      overrideCamera: 0
+      restoreCamera: 1
+      offset: {x: 0, y: 0, z: 0, w: 0}
+      cameraFieldOfView: 60
 --- !u!114 &4254346597161300133
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -83,10 +123,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6b3d386ba5cd94485973aee1479b272e, type: 3}
-  m_Name: CharacterAbove
+  m_Name: GhostAbove
   m_EditorClassIdentifier: 
   settings:
-    passTag: CharacterAbove
+    passTag: GhostAbove
     Event: 500
     filterSettings:
       RenderQueueType: 1
@@ -111,6 +151,44 @@ MonoBehaviour:
       restoreCamera: 1
       offset: {x: 0, y: 0, z: 0, w: 0}
       cameraFieldOfView: 60
+--- !u!114 &4396845257046723428
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6b3d386ba5cd94485973aee1479b272e, type: 3}
+  m_Name: FriendsBehind
+  m_EditorClassIdentifier: 
+  settings:
+    passTag: FriendsBehind
+    Event: 300
+    filterSettings:
+      RenderQueueType: 0
+      LayerMask:
+        serializedVersion: 2
+        m_Bits: 8192
+      PassNames: []
+    overrideMaterial: {fileID: 2100000, guid: 94d939a837535234bb800813be93e21d, type: 2}
+    overrideMaterialPassIndex: 0
+    overrideDepthState: 1
+    depthCompareFunction: 5
+    enableWrite: 0
+    stencilSettings:
+      overrideStencilState: 0
+      stencilReference: 0
+      stencilCompareFunction: 8
+      passOperation: 0
+      failOperation: 0
+      zFailOperation: 0
+    cameraSettings:
+      overrideCamera: 0
+      restoreCamera: 1
+      offset: {x: 0, y: 0, z: 0, w: 0}
+      cameraFieldOfView: 60
 --- !u!114 &4772157224064463712
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -121,10 +199,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6b3d386ba5cd94485973aee1479b272e, type: 3}
-  m_Name: CharacterBehind
+  m_Name: GhostBehind
   m_EditorClassIdentifier: 
   settings:
-    passTag: CharacterBehind
+    passTag: GhostBehind
     Event: 500
     filterSettings:
       RenderQueueType: 1
@@ -134,13 +212,13 @@ MonoBehaviour:
       PassNames:
       - 
     overrideMaterial: {fileID: 2100000, guid: 9055ce5bc3f49ab4b95c7d2534d3634b, type: 2}
-    overrideMaterialPassIndex: 0
+    overrideMaterialPassIndex: 1
     overrideDepthState: 1
     depthCompareFunction: 5
-    enableWrite: 1
+    enableWrite: 0
     stencilSettings:
       overrideStencilState: 0
-      stencilReference: 0
+      stencilReference: 15
       stencilCompareFunction: 8
       passOperation: 0
       failOperation: 0
@@ -169,7 +247,7 @@ MonoBehaviour:
       RenderQueueType: 0
       LayerMask:
         serializedVersion: 2
-        m_Bits: 512
+        m_Bits: 4096
       PassNames: []
     overrideMaterial: {fileID: 2100000, guid: 9055ce5bc3f49ab4b95c7d2534d3634b, type: 2}
     overrideMaterialPassIndex: 0
