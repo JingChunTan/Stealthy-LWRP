@@ -11,9 +11,10 @@ using UnityEngine.AI;
 public class FollowPlayer : MonoBehaviour {
 
 	//public float speed = 1.1f;
-	public float goalReachRadiusAccuracy = 0.5f;
+	public float goalReachRadiusAccuracy = 1.0f;
     public float lookRadius = 10f;
     private int interval = 1;
+    public float followSharpness = 0.05f;
     //float rotationSpeed = 0.1f;
     float _distanceToGoal;
      Animator _cat_Animator;
