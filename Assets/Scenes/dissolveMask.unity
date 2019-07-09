@@ -7261,6 +7261,11 @@ PrefabInstance:
       propertyPath: caughtAudio
       value: 
       objectReference: {fileID: 433169145}
+    - target: {fileID: 600782355301638218, guid: 808a74c8f8abcc848bba60ba4d4fad44,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 30f1fee0706051548909c5d47df4a6b7, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 808a74c8f8abcc848bba60ba4d4fad44, type: 3}
 --- !u!4 &4336436358720344230 stripped
