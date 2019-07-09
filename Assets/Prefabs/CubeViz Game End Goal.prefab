@@ -106,7 +106,7 @@ GameObject:
   - component: {fileID: 8552365174439894904}
   - component: {fileID: 4043340591791360904}
   m_Layer: 0
-  m_Name: Emissive Sphere
+  m_Name: Emissive Sphere Centre
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
